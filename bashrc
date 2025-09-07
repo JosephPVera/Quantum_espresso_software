@@ -143,4 +143,6 @@ export PATH=$PATH:$EXCITINGTOOLS:$EXCITINGROOT/bin:$EXCITINGTOOLS/stm
 
 # vaspkit.1.5.1
 export PATH=/home/joseph/vaspkit.1.5.1/bin:${PATH}
+
+# Quantum Espresso
 PATH="/home/joseph/qe-7.4.1/bin:$PATH"

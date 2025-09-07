@@ -3,13 +3,13 @@
 ## How install it?
 
 1. Requeriments:
-
-sudo apt update
-sudo apt install build-essential gfortran gcc g++ \
-libopenmpi-dev openmpi-bin \
-libblas-dev liblapack-dev libfftw3-dev \
-git wget make
-
+   ```bash
+   sudo apt update
+   sudo apt install build-essential gfortran gcc g++ \
+   libopenmpi-dev openmpi-bin \
+   libblas-dev liblapack-dev libfftw3-dev \
+   git wget make
+   ```
 
 2. Installation tutorial
 https://www.youtube.com/watch?v=-5fcsJILc6U

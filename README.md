@@ -47,3 +47,8 @@ pseudopotential:
 - https://www.pseudo-dojo.org/
 
 graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene
+
+
+## Using job script
+
+https://uofsc-rc.github.io/tutorials/qe

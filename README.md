@@ -27,7 +27,7 @@ Importante: https://pranabdas.github.io/espresso/category/hands-on/
 ```bash
 pw.x < pw.scf.silicon.in > pw.scf.silicon.out
 ```
-# For parallel execution
+### For parallel execution
 ```bash
 mpirun -np 4 pw.x -inp pw.scf.silicon.in > pw.scf.silicon.out
 ```

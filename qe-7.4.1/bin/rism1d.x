@@ -1,0 +1,1 @@
+../PW/tools/rism1d.x

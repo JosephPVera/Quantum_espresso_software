@@ -1,0 +1,1 @@
+../PW/tools/scan_ibrav.x

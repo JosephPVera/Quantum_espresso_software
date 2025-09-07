@@ -24,13 +24,17 @@ https://pranabdas.github.io/espresso/category/hands-on/
             Run SCF simulation
 Importante: https://pranabdas.github.io/espresso/category/hands-on/
 #####################################################################
+```bash
 pw.x < pw.scf.silicon.in > pw.scf.silicon.out
+```
 # For parallel execution
+```bash
 mpirun -np 4 pw.x -inp pw.scf.silicon.in > pw.scf.silicon.out
+```
 
-
+```bash
 grep -e 'total energy' -e estimate pw.scf.silicon.out
-
+```
 
 https://www-quantum--espresso-org.translate.goog/Doc/INPUT_PW.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc#idm401
 

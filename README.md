@@ -2,7 +2,7 @@
 
 ## How install it?
 
-1. Requeriments:
+1. Requirements:
    ```bash
    sudo apt update
    sudo apt install build-essential gfortran gcc g++ \

@@ -46,6 +46,7 @@ pseudopotential:
 - https://pseudopotentials.quantum-espresso.org/legacy_tables
 - https://dalcorso.github.io/pslibrary/
 - https://www.pseudo-dojo.org/
+- https://pseudopotentials.quantum-espresso.org/
 
 graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene
 

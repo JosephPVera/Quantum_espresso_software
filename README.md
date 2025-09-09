@@ -44,7 +44,7 @@ https://www-quantum--espresso-org.translate.goog/Doc/INPUT_PW.html?_x_tr_sl=en&_
 
 https://pranabdas.github.io/espresso/hands-on/graphene/
 
-pseudopotential: 
+Pseudopotentials: 
 - https://pseudopotentials.quantum-espresso.org/legacy_tables
 - https://dalcorso.github.io/pslibrary/
 - https://www.pseudo-dojo.org/

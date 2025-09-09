@@ -52,9 +52,8 @@ Pseudopotentials:
 - https://www.physics.rutgers.edu/gbrv/
 - https://nninc.cnf.cornell.edu
 - http://www.quantum-simulation.org/potentials/
-- BLYP pseudopotentials
-- SCAN pseudopotentials
-- https://nninc.cnf.cornell.edu/
+- BLYP pseudopotentials: https://pseudopotentials.quantum-espresso.org/legacy_tables/hartwigesen-goedecker-hutter-pp
+- SCAN pseudopotentials: https://yaoyi92.github.io/scan-tm-pseudopotentials.html
 
 
 graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene

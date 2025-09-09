@@ -1,4 +1,4 @@
-# Quantum_espresso_softwareh
+# Quantum_espresso_software
 
 ## How install it?
 

@@ -44,6 +44,8 @@ grep -e 'total energy' -e estimate pw.scf.silicon.out
 - https://pranabdas.github.io/espresso/hands-on/graphene/
 
 Pseudopotentials: 
+useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
+
 - https://pseudopotentials.quantum-espresso.org/legacy_tables
 - https://dalcorso.github.io/pslibrary/
 - https://www.pseudo-dojo.org/

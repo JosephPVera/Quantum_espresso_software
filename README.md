@@ -62,6 +62,12 @@ useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
 graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene
 
 
-## Using job script
+### Using job script
 
 https://uofsc-rc.github.io/tutorials/qe
+
+### Visualize the crystal structure with xcrysden
+
+```bash
+xcrysden --pwi graphene_scf.in
+```

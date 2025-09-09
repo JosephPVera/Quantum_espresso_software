@@ -68,6 +68,10 @@ https://uofsc-rc.github.io/tutorials/qe
 
 ### Visualize the crystal structure with xcrysden
 
+Install xcrysden : 
+
+https://github.com/JosephPVera/Exciting_code_software/tree/main/xcrysden_solutions
+
 ```bash
 xcrysden --pwi graphene_scf.in
 ```

@@ -12,7 +12,7 @@
    ```
 
 2. Installation tutorial
-https://www.youtube.com/watch?v=-5fcsJILc6U
+- https://www.youtube.com/watch?v=-5fcsJILc6U
 
 3. Tutorial for running simulations
 - https://github.com/rpadhikari/Himachal_NMM_22
@@ -21,10 +21,12 @@ https://www.youtube.com/watch?v=-5fcsJILc6U
 
 
 
-#####################################################################
-            Run SCF simulation
+--- 
+Run SCF simulation
+            
 Importante: https://pranabdas.github.io/espresso/category/hands-on/
-#####################################################################
+---
+
 ```bash
 pw.x < pw.scf.silicon.in > pw.scf.silicon.out
 ```

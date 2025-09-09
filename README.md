@@ -48,6 +48,14 @@ Pseudopotentials:
 - https://dalcorso.github.io/pslibrary/
 - https://www.pseudo-dojo.org/
 - https://pseudopotentials.quantum-espresso.org/
+- https://www.materialscloud.org/discover/sssp/table/efficiency
+- https://www.physics.rutgers.edu/gbrv/
+- https://nninc.cnf.cornell.edu
+- http://www.quantum-simulation.org/potentials/
+- BLYP pseudopotentials
+- SCAN pseudopotentials
+- https://nninc.cnf.cornell.edu/
+
 
 graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene
 

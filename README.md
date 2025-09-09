@@ -18,6 +18,7 @@
 - https://github.com/rpadhikari/Himachal_NMM_22
 - https://pranabdas.github.io/espresso/category/hands-on/
 - https://jyhuang.idv.tw/JYH_QESimulation.html
+- https://www.youtube.com/watch?v=gVHrjbDCxaM&list=PL6fYKYtuMec_2-_18mxoHswOoCMz3KTe4&index=6
 
 
 
@@ -39,10 +40,8 @@ mpirun -np 4 pw.x -inp pw.scf.silicon.in > pw.scf.silicon.out
 grep -e 'total energy' -e estimate pw.scf.silicon.out
 ```
 
-https://www-quantum--espresso-org.translate.goog/Doc/INPUT_PW.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc#idm401
-
-
-https://pranabdas.github.io/espresso/hands-on/graphene/
+- https://www-quantum--espresso-org.translate.goog/Doc/INPUT_PW.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc#idm401
+- https://pranabdas.github.io/espresso/hands-on/graphene/
 
 Pseudopotentials: 
 - https://pseudopotentials.quantum-espresso.org/legacy_tables

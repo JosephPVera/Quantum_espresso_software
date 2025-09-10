@@ -64,14 +64,18 @@ graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene
 
 ### Using job script
 
-https://uofsc-rc.github.io/tutorials/qe
+- https://uofsc-rc.github.io/tutorials/qe
 
 ### Visualize the crystal structure with xcrysden
 
 Install xcrysden : 
 
-https://github.com/JosephPVera/Exciting_code_software/tree/main/xcrysden_solutions
+- https://github.com/JosephPVera/Exciting_code_software/tree/main/xcrysden_solutions
 
 ```bash
 xcrysden --pwi graphene_scf.in
 ```
+
+###    Find the gap
+
+- https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso

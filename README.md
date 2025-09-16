@@ -41,6 +41,9 @@ grep -e 'total energy' -e estimate pw.scf.silicon.out
 ```
 
 - https://www-quantum--espresso-org.translate.goog/Doc/INPUT_PW.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc#idm401
+- https://www.quantum-espresso.org/Doc/INPUT_DOS.html
+- https://www.quantum-espresso.org/Doc/INPUT_BANDS.html
+- https://www.quantum-espresso.org/Doc/INPUT_PROJWFC.html
 - https://pranabdas.github.io/espresso/hands-on/graphene/
 
 ### Pseudopotentials: 

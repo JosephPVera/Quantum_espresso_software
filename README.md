@@ -85,3 +85,14 @@ xcrysden --pwi graphene_scf.in
 ###    Find the gap
 
 - https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso
+
+### Modifying the resolution in /home/joseph/qe-7.4.1/PP/src/dos.f90
+Chande the resolution in section:
+```bash
+WRITE (4,'(f15.8,3e20.10)') E * rytoev, DOSofE(1)/rytoev, DOSint(1)
+```
+
+update the dos.90 using
+```bash
+make pwall -j2
+```

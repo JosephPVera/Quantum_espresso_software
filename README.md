@@ -47,6 +47,7 @@ grep -e 'total energy' -e estimate pw.scf.silicon.out
 - https://pranabdas.github.io/espresso/hands-on/graphene/
 
 - Band gap: https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso
+- SOC: https://www.quantum-espresso.org/Doc/pw_user_guide/node10.html
   
 ### Pseudopotentials: 
 

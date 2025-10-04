@@ -63,6 +63,7 @@ useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
 - http://www.quantum-simulation.org/potentials/
 - BLYP pseudopotentials: https://pseudopotentials.quantum-espresso.org/legacy_tables/hartwigesen-goedecker-hutter-pp
 - SCAN pseudopotentials: https://yaoyi92.github.io/scan-tm-pseudopotentials.html
+- Carbono: https://pseudopotentials.quantum-espresso.org/legacy_tables/ps-library/c
 
 
 graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene

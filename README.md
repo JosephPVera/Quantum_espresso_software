@@ -99,3 +99,31 @@ update the dos.90 using
 ```bash
 make pwall -j2
 ```
+
+
+# Commands to run the simulations
+### SCF
+```bash
+pw.x -i grap_scf.in > grap_scf.out
+```
+
+### NSCF
+```bash
+pw.x -i grap_nscf.in > grap_nscf.out
+```
+
+### DOS
+```bash
+dos.x -i grap_dos.in > grap_dos.out
+```
+
+### PDOS
+```bash
+projwfc.x < grap_projwfc.in > grap_projwfc.out
+```
+
+### Band structure
+```bash
+pw.x -i grap_bands.in > grap_bands.out
+bands.x -i grap_bands_pp.in > grap_bands_pp.out
+```

@@ -10,7 +10,15 @@
    libblas-dev liblapack-dev libfftw3-dev \
    git wget make
    ```
-2. Download the file [eigenplot.py](https://github.com/JosephPVera/Localized-States/blob/main/eigenplot.py)
+2. Download the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file using
+   ```bash
+   git clone https://github.com/JosephPVera/Quantum_espresso_software.git
+   ```
+3. Set up the .bashrc file writing
+   ```bash
+   # Quantum Espresso
+   PATH="/home/joseph/qe-7.4.1/bin:$PATH"
+   ```  
    
 ## Install from the scratch
 

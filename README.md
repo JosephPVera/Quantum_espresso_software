@@ -10,7 +10,7 @@
    libblas-dev liblapack-dev libfftw3-dev \
    git wget make
    ```
-2. Download the file 
+2. Download the file [eigenplot.py](https://github.com/JosephPVera/Localized-States/blob/main/eigenplot.py)
    
 ## Install from the scratch
 

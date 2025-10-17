@@ -10,11 +10,14 @@
    libblas-dev liblapack-dev libfftw3-dev \
    git wget make
    ```
+2. Download the file 
+   
+## Install from the scratch
 
-2. Installation tutorial
+1. Installation tutorial
 - https://www.youtube.com/watch?v=-5fcsJILc6U
 
-3. Tutorial for running simulations
+2. Tutorial for running simulations
 - https://github.com/rpadhikari/Himachal_NMM_22
 - https://pranabdas.github.io/espresso/category/hands-on/
 - https://jyhuang.idv.tw/JYH_QESimulation.html

@@ -14,11 +14,16 @@
    ```bash
    git clone https://github.com/JosephPVera/Quantum_espresso_software.git
    ```
-3. Set up the .bashrc file as [bashrc](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/bashrc), write 
+3. Set up the .bashrc file similar to [bashrc](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/bashrc), write 
    ```bash
    # Quantum Espresso
    PATH="/home/joseph/qe-7.4.1/bin:$PATH"
    ```  
+4. Run
+   ```bash
+   source ~/.bashrc
+   ```
+5. Now you can use the software.
    
 ## Install from the scratch
 

@@ -106,9 +106,26 @@ xcrysden --pwi graphene_scf.in
 - https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso
 
 ### Modifying the resolution in /home/joseph/qe-7.4.1/PP/src/dos.f90
-Chande the resolution in section:
+Change the resolution in section:
 ```bash
 WRITE (4,'(f15.8,3e20.10)') E * rytoev, DOSofE(1)/rytoev, DOSint(1)
+```
+
+update the dos.90 using
+```bash
+make pwall -j2
+```
+
+### Modifying the resolution in /home/joseph/qe-7.4.1/PP/src/bands.f90
+Change the resolution in section:
+```bash
+WRITE( stdout,'(5x,"high-symmetry point: ",3f7.4,&
+                 &"   x coordinate",f9.4)') (xk(i,n),i=1,3), kx(n)
+```
+
+and 
+```bash
+WRITE (iunpun0,'(2f10.4)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
 
 update the dos.90 using

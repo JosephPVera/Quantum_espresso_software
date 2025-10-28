@@ -169,5 +169,8 @@ projwfc.x < grap_projwfc.in > grap_projwfc.out
 ### Band structure
 ```bash
 pw.x -i grap_bands.in > grap_bands.out
+```
+
+```bash
 bands.x -i grap_bands_pp.in > grap_bands_pp.out
 ```

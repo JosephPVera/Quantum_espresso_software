@@ -175,3 +175,13 @@ pw.x -i grap_bands.in > grap_bands.out
 ```bash
 bands.x -i grap_bands_pp.in > grap_bands_pp.out
 ```
+
+### Electric Potential
+```bash
+pp.x < pp_SOC_rashba.in> pp_SOC_rashba.out
+```
+
+### Data to plot the electric potential
+```bash
+average.x <average.in> average.out
+```

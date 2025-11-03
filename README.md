@@ -60,6 +60,7 @@ grep -e 'total energy' -e estimate pw.scf.silicon.out
 - DOS: https://www.quantum-espresso.org/Doc/INPUT_DOS.html
 - BANDS: https://www.quantum-espresso.org/Doc/INPUT_BANDS.html
 - PROJWFC: https://www.quantum-espresso.org/Doc/INPUT_PROJWFC.html
+- pp.x: https://www.quantum-espresso.org/Doc/INPUT_PP.html
 - https://pranabdas.github.io/espresso/hands-on/graphene/
 
 - Band gap: https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso

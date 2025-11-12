@@ -48,6 +48,20 @@ Importante: https://pranabdas.github.io/espresso/category/hands-on/
 pw.x < pw.scf.silicon.in > pw.scf.silicon.out
 ```
 ### For parallel execution
+Activate parallelization
+```bash
+./configure
+```
+
+```bash
+make pw
+```
+
+```bash
+make pwall
+```
+
+Run 
 ```bash
 mpirun -np 4 pw.x -inp pw.scf.silicon.in > pw.scf.silicon.out
 ```

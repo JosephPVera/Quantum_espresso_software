@@ -61,9 +61,14 @@ make pw
 make pwall
 ```
 
+check the number of cores:
+```bash
+lscpu
+```
+
 Run 
 ```bash
-mpirun -np 4 pw.x -inp pw.scf.silicon.in > pw.scf.silicon.out
+mpirun -np 4 pw.x -inp grap_SOC_scf.in > grap_SOC_scf.out
 ```
 
 ```bash

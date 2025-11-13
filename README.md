@@ -169,7 +169,7 @@ make pw -j2
 ```
 
 # Commands to run the simulations
-### SCF
+### 1. SCF
 ```bash
 pw.x -i grap_scf.in > grap_scf.out
 ```
@@ -179,7 +179,7 @@ Parallel
 mpirun -np 6 pw.x -inp grap_scf.in > grap_scf.out
 ```
 
-### NSCF
+### 2. NSCF
 ```bash
 pw.x -i grap_nscf.in > grap_nscf.out
 ```
@@ -189,7 +189,7 @@ Parallel
 mpirun -np 6 pw.x -inp grap_nscf.in > grap_nscf.out
 ```
 
-### DOS
+### 3. DOS
 ```bash
 dos.x -i grap_dos.in > grap_dos.out
 ```
@@ -199,7 +199,7 @@ Parallel
 mpirun -np 6 dos.x -inp grap_dos.in > grap_dos.out
 ```
 
-### PDOS
+### 4. PDOS
 ```bash
 projwfc.x < grap_projwfc.in > grap_projwfc.out
 ```
@@ -209,7 +209,7 @@ Parallel
 mpirun -np 6 projwfc.x -inp < grap_projwfc.in > grap_projwfc.out
 ```
 
-### Band structure
+### 5. Band structure
 ```bash
 pw.x -i grap_bands.in > grap_bands.out
 ```
@@ -227,7 +227,7 @@ mpirun -np 6 pw.x -inp grap_bands.in > grap_bands.out
 mpirun -np 6 bands.x -inp grap_bands_pp.in > grap_bands_pp.out
 ```
 
-### Electric Potential
+### 6. Electric Potential
 ```bash
 pp.x < pp_SOC_rashba.in> pp_SOC_rashba.out
 ```
@@ -237,7 +237,7 @@ Parallel
 mpirun -np 6 pp.x -inp < pp_SOC_rashba.in > pp_SOC_rashba.out
 ```
 
-### Data to plot the electric potential
+### 7. Data to plot the electric potential
 ```bash
 average.x <average.in> average.out
 ```

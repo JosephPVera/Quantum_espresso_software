@@ -29,7 +29,7 @@
    ```bash
    git clone https://github.com/JosephPVera/Quantum_espresso_software.git
    ```
-4. Copy the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file to **/home/joseph**
+4. Copy the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file to **/home/joseph/**
    ```bash
    cp -r Quantum_espresso_software/qe-7.4.1 .
    ```
@@ -139,7 +139,7 @@ Useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
 - [x] Carbono: https://nninc.cnf.cornell.edu/psplist.php?element=c
 
 ## 6. Visualize the crystal structure 
-### 6.1. with [xcrysden](http://www.xcrysden.org/)
+### 6.1. [xcrysden](http://www.xcrysden.org/)
 6.1.1. Install xcrysden
 ```bash
 sudo apt-get update
@@ -165,7 +165,21 @@ cp /usr/share/xcrysden/Tcl/custom-definitions .
 #set toglOpt(accum) false
 ```
 
-### 6.2. with [VESTA](https://jp-minerals.org/vesta/en/)
+### 6.2. [VESTA](https://jp-minerals.org/vesta/en/)
+6.2.1. Download VESTA
+6.2.2. Unpack the file in the path **/home/joseph/Downloads**
+```bash
+tar -xvjf VESTA-gtk3.tar.bz2
+```
+6.2.3. Copy to the **/home/joseph/**
+```bash
+cp -r VESTA-gtk3 ../VESTA
+```
+6.2.4. Set up the **.bashrc** file on your laptop or pc similar to [bashrc](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/bashrc) file 
+```bash
+alias vesta="/home/joseph/VESTA/VESTA"
+```
+
 6.2.1. Download the [qe_convert.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/qe_convert.py) script
 
 6.2.2. Run

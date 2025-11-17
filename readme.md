@@ -1,5 +1,8 @@
 # Quantum Espresso Software
 
+## 0. Quantum ESPRESSO workflow
+![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/workflow/qe-wrokflow.png)
+
 ## 1. How install it?
 
 ### 1.1. Using the source package from the official website: https://www.quantum-espresso.org/
@@ -328,6 +331,3 @@ Parallel
 ```bash
 mpirun -np 6 average.x -inp <average.in> average.out
 ```
-
-## 10. Quantum ESPRESSO workflow
-![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/workflow/qe-wrokflow.png)

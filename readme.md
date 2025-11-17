@@ -60,6 +60,7 @@ Check: https://www.youtube.com/watch?v=2PAJGrNhZB8
 
 2.1. Activate parallelization
 ```bash
+cd /home/joseph/qe-7.4.1
 ./configure
 ```
 2.2. Run

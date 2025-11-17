@@ -118,6 +118,7 @@ fi
 
 alias cpu='grep '\''Total CPU time'\'''
 
+# Vesta https://jp-minerals.org/vesta/en/download.html
 alias vesta="/home/joseph/VESTA/VESTA"
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1

@@ -56,32 +56,23 @@
 **Information:** This compiled version of Quantum ESPRESSO does not have parallel calculation enabled.
 
 --- 
-Run SCF simulation
-            
-Importante: https://pranabdas.github.io/espresso/category/hands-on/
+Enabling parallel execution
 ---
+Check: https://www.youtube.com/watch?v=2PAJGrNhZB8
 
-```bash
-pw.x < pw.scf.silicon.in > pw.scf.silicon.out
-```
-### For parallel execution
-
-https://www.youtube.com/watch?v=2PAJGrNhZB8
-
-Activate parallelization
+1. Activate parallelization
 ```bash
 ./configure
 ```
-
+2. Run
 ```bash
 make pw
 ```
-
+3. Run
 ```bash
 make pwall
 ```
-
-check the number of cores:
+4. Check the number of cores on your laptop or pc
 ```bash
 lscpu
 ```

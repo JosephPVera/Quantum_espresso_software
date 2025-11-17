@@ -19,7 +19,7 @@
    libblas-dev liblapack-dev libfftw3-dev \
    git wget make
    ```
-2. Open the terminal and install Git
+2. Install Git
    ```bash
    sudo apt update
    sudo apt install git

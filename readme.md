@@ -53,7 +53,7 @@
    ```
 
    
-5. Now you can use the software.
+9. Now you can use the software.
 
    
 ## Install from the scratch

@@ -151,9 +151,10 @@ sudo apt-get install xcrysden
 xcrysden --pwi silicon_scf.in
 ```
 
-If xcrysden crashes with error, use these steps to fix it
+**WARNING:** If xcrysden crashes with error, use these steps to fix it
 
 6.1.3. Copy **custom-definitions** file
+
 ``bash
 mkdir .xcrysden
 cd .xcrysden

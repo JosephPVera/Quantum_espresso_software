@@ -55,20 +55,6 @@
    
 9. Now you can use the software.
 
-   
-## Install from the scratch
-
-1. Installation tutorial
-- https://www.youtube.com/watch?v=-5fcsJILc6U
-
-2. Tutorial for running simulations
-- https://github.com/rpadhikari/Himachal_NMM_22
-- https://pranabdas.github.io/espresso/category/hands-on/
-- https://jyhuang.idv.tw/JYH_QESimulation.html
-- https://www.youtube.com/watch?v=gVHrjbDCxaM&list=PL6fYKYtuMec_2-_18mxoHswOoCMz3KTe4&index=6
-
-
-
 --- 
 Run SCF simulation
             

@@ -136,20 +136,22 @@ Useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
 - [x] Carbono: https://pseudopotentials.quantum-espresso.org/legacy_tables/ps-library/c
 - [x] Carbono: https://nninc.cnf.cornell.edu/psplist.php?element=c
 
+## 6. Visualize the crystal structure with [xcrysden](http://www.xcrysden.org/)
+6.1. Install xcrysden
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install xcrysden
+```
+6.2. Visualize
+```bash
+xcrysden --pwi silicon_scf.in
+```
+
 ### Using job script
 
 - https://uofsc-rc.github.io/tutorials/qe
-
-### Visualize the crystal structure with xcrysden
-
-Install xcrysden : 
-
-- https://github.com/JosephPVera/Exciting_code_software/tree/main/xcrysden_solutions
-
-```bash
-xcrysden --pwi graphene_scf.in
-```
-
+  
 ###    Find the gap
 
 - https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso

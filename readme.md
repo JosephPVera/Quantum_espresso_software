@@ -42,8 +42,15 @@
    ```bash
    source ~/.bashrc
    ```
-
-
+7. Create the job folder
+   ```bash
+   mkdir /home/joseph/Documents/qe
+   ```
+8. Copy the **pseudos** folder and create a folder of your choice to work in, for example the **silicon** folder
+   ```bash
+   cp -r /home/joseph/Quantum_espresso_software/Examples/pseudos /home/joseph/Documents/qe
+   mkdir /home/joseph/Documents/qe/silicon
+   ```
 
    
 5. Now you can use the software.

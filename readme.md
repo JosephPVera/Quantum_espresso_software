@@ -51,9 +51,9 @@
    cp -r /home/joseph/Quantum_espresso_software/Examples/pseudos /home/joseph/Documents/qe
    mkdir /home/joseph/Documents/qe/silicon
    ```
-
-   
 9. Now you can use the software.
+
+**Information:** This compiled version of Quantum ESPRESSO does not have parallel calculation enabled.
 
 --- 
 Run SCF simulation

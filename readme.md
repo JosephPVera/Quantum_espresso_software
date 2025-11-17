@@ -75,15 +75,45 @@ make pwall
 lscpu
 ```
 
-## 3. Replicating the example in [silicon](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/Examples/silicon) file
-Run 
+## 3. Replicating the example in the [silicon](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/Examples/silicon) file
+3.1. Copy the files with the .in extension into the **silicon** file
 ```bash
-mpirun -np 4 pw.x -inp grap_SOC_scf.in > grap_SOC_scf.out
+cp /home/joseph/Quantum_espresso_software/Examples/silicon/silicon_*.in /home/joseph/Documents/qe/silicon/
 ```
-
+3.2. Run the SCF calculation 
+```bash
+mpirun -np 4 pw.x -inp silicon_scf.in > silicon_scf.out
+```
+3.3. Check the total energy of the system
 ```bash
 grep -e 'total energy' -e estimate pw.scf.silicon.out
 ```
+3.4. Run the NSCF calculation
+```bash
+mpirun -np 4 pw.x -inp silicon_nscf.in > silicon_nscf.out
+```
+3.5. Check the VBM and CBM values
+```bash
+grep 'highest occupied' silicon_nscf.out
+```
+3.6. Run the DOS calculation and plot it
+```bash
+mpirun -np 4 dos.x -inp silicon_dos.in > silicon_dos.out
+```
+3.7. Run the PDOS calculation and plot it 
+```bash
+mpirun -np 4 projwfc.x -inp silicon_projwfc.in > silicon_projwfc.out
+```
+3.7. Run the BAND calculation and plot it
+```bash
+mpirun -np 4 pw.x -inp silicon_bands.in > silicon_bands.out
+```
+```bash
+mpirun -np 4 bands.x -inp silicon_bands_pp.in > silicon_bands_pp.out
+```
+
+
+
 
 - PW: https://www.quantum-espresso.org/Doc/INPUT_PW.html
 - DOS: https://www.quantum-espresso.org/Doc/INPUT_DOS.html

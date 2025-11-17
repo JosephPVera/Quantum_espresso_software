@@ -150,7 +150,8 @@ xcrysden --pwi silicon_scf.in
 ```
 
 ### 6.2. with [VESTA](https://jp-minerals.org/vesta/en/)
-6.2.1. Download the [qe_convert.py]([https://jp-minerals.org/vesta/en/](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/qe_convert.py)) script
+6.2.1. Download the [qe_convert.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/qe_convert.py) script
+
 6.2.2. Run
 ```bash
 qe_convert.py silicon_scf.in

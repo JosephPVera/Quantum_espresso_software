@@ -98,10 +98,19 @@ grep -e 'total energy' -e estimate silicon_scf.out
 ```bash
 mpirun -np 4 pw.x -inp silicon_nscf.in > silicon_nscf.out
 ```
-3.5. Check the VBM and CBM values. Calculate the band gap as **gap = CBM - VBM**
+3.5. Check the VBM and CBM values
 ```bash
 grep 'highest occupied' silicon_nscf.out
 ```
+This command will print a line like the following
+```bash
+highest occupied, lowest unoccupied level (ev):     6.2107    6.7835
+```
+Calculate the band gap as **gap = CBM - VBM**
+```bash
+Gap = 6.7835 - 6.2107 = 0.5728 eV
+```
+
 3.6. Run the DOS calculation
 ```bash
 mpirun -np 4 dos.x -inp silicon_dos.in > silicon_dos.out
@@ -116,7 +125,7 @@ mpirun -np 4 projwfc.x -inp silicon_projwfc.in > silicon_projwfc.out
 3.9. Plot the PDOS using the [pdos.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/pdos.py) script
 ![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/silicon_pdos-atom_1.png)
 
-3.10. Run the BAND calculation and plot it
+3.10. Run the BAND calculation
 ```bash
 mpirun -np 4 pw.x -inp silicon_bands.in > silicon_bands.out
 ```

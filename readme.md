@@ -75,6 +75,7 @@ make pwall
 lscpu
 ```
 
+## 3. Replicating the example in [silicon](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/Examples/silicon) file
 Run 
 ```bash
 mpirun -np 4 pw.x -inp grap_SOC_scf.in > grap_SOC_scf.out

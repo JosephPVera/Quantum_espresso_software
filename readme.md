@@ -151,6 +151,20 @@ sudo apt-get install xcrysden
 xcrysden --pwi silicon_scf.in
 ```
 
+If xcrysden crashes with error, use these steps to fix it
+
+6.1.3. Copy **custom-definitions** file
+``bash
+mkdir .xcrysden
+cd .xcrysden
+cp /usr/share/xcrysden/Tcl/custom-definitions .
+```
+
+6.1.4. Uncommenting the following line in the **custom_definitions** file
+``bash
+#set toglOpt(accum) false
+```
+
 ### 6.2. with [VESTA](https://jp-minerals.org/vesta/en/)
 6.2.1. Download the [qe_convert.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/qe_convert.py) script
 

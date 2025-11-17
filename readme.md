@@ -178,18 +178,18 @@ vesta POSCAR
 - SOC: https://www.quantum-espresso.org/Doc/pw_user_guide/node10.html
   
 ## 8. Modifying the resolution 
-### 8.1. in /home/joseph/qe-7.4.1/PP/src/dos.f90
+### 8.1. DOS: /home/joseph/qe-7.4.1/PP/src/dos.f90
 Change the resolution in section:
 ```bash
 WRITE (4,'(f15.8,3e20.10)') E * rytoev, DOSofE(1)/rytoev, DOSint(1)
 ```
 
-update the dos.90 in /home/joseph/qe-7.4.1 using
+update the dos.90 in **/home/joseph/qe-7.4.1** using
 ```bash
 make pwall -j2
 ```
 
-### 8.2. in /home/joseph/qe-7.4.1/PP/src/bands.f90
+### 8.2. BANDS: /home/joseph/qe-7.4.1/PP/src/bands.f90
 Change the resolution in section:
 ```bash
 WRITE( stdout,'(5x,"high-symmetry point: ",3f7.4,&
@@ -201,18 +201,18 @@ and
 WRITE (iunpun0,'(2f10.4)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
 
-update the bands.90 in /home/joseph/qe-7.4.1 using
+update the bands.90 in **/home/joseph/qe-7.4.1** using
 ```bash
 make pwall -j2
 ```
 
-### 8.3. in /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
+### 8.3. Fermy energy: /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
 Change the resolution in section:
 ```bash
 9040 FORMAT(/'     the Fermi energy is ',F10.4,' ev' )
 ```
 
-update the print_ks_energies.f90 in /home/joseph/qe-7.4.1 using
+update the print_ks_energies.f90 in **/home/joseph/qe-7.4.1** using
 ```bash
 make pw -j2
 ```

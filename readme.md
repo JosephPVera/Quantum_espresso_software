@@ -167,6 +167,7 @@ cp /usr/share/xcrysden/Tcl/custom-definitions .
 
 ### 6.2. [VESTA](https://jp-minerals.org/vesta/en/)
 6.2.1. Download VESTA
+
 6.2.2. Unpack the file in the path **/home/joseph/Downloads**
 ```bash
 tar -xvjf VESTA-gtk3.tar.bz2
@@ -180,13 +181,13 @@ cp -r VESTA-gtk3 ../VESTA
 alias vesta="/home/joseph/VESTA/VESTA"
 ```
 
-6.2.1. Download the [qe_convert.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/qe_convert.py) script
+6.2.5. Download the [qe_convert.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/qe_convert.py) script
 
-6.2.2. Run
+6.2.6. Run
 ```bash
 qe_convert.py silicon_scf.in
 ```
-6.2.3. Visualize
+6.2.7. Visualize
 ```bash
 vesta POSCAR
 ```

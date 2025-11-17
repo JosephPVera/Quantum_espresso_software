@@ -67,11 +67,10 @@ cd /home/joseph/qe-7.4.1
 ```bash
 make pw
 ```
-2.3. Run
 ```bash
 make pwall
 ```
-2.4. Check the number of cores on your laptop or pc
+2.3. Check the number of cores on your laptop or pc
 ```bash
 lscpu
 ```

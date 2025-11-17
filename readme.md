@@ -161,22 +161,22 @@ qe_convert.py silicon_scf.in
 vesta POSCAR
 ```
 
-
-### Using job script
-
-- https://uofsc-rc.github.io/tutorials/qe
+## 7. Extra information
   
-###    Find the gap
+### 7.1. Find the gap
 
 - https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso
-- https://pranabdas.github.io/espresso/hands-on/graphene/
-- Band gap: https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso
-- SOC: https://www.quantum-espresso.org/Doc/pw_user_guide/node10.html
-- graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene
 
+### 7.2. Using job script in HPC
+- https://uofsc-rc.github.io/tutorials/qe
+
+### 7.3. Another example: Graphene
+- https://pranabdas.github.io/espresso/hands-on/graphene/
+- https://github.com/pranabdas/espresso/tree/main/src/graphene
+- SOC: https://www.quantum-espresso.org/Doc/pw_user_guide/node10.html
   
-## Modifying the resolution 
-### 1. in /home/joseph/qe-7.4.1/PP/src/dos.f90
+## 8. Modifying the resolution 
+### 8.1. in /home/joseph/qe-7.4.1/PP/src/dos.f90
 Change the resolution in section:
 ```bash
 WRITE (4,'(f15.8,3e20.10)') E * rytoev, DOSofE(1)/rytoev, DOSint(1)
@@ -187,7 +187,7 @@ update the dos.90 in /home/joseph/qe-7.4.1 using
 make pwall -j2
 ```
 
-### 2. in /home/joseph/qe-7.4.1/PP/src/bands.f90
+### 8.2. in /home/joseph/qe-7.4.1/PP/src/bands.f90
 Change the resolution in section:
 ```bash
 WRITE( stdout,'(5x,"high-symmetry point: ",3f7.4,&
@@ -204,7 +204,7 @@ update the bands.90 in /home/joseph/qe-7.4.1 using
 make pwall -j2
 ```
 
-### 3. in /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
+### 8.3. in /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
 Change the resolution in section:
 ```bash
 9040 FORMAT(/'     the Fermi energy is ',F10.4,' ev' )
@@ -215,8 +215,8 @@ update the print_ks_energies.f90 in /home/joseph/qe-7.4.1 using
 make pw -j2
 ```
 
-# Commands to run the simulations
-### 1. SCF
+## 9. Commands to run the simulations
+### 9.1. SCF
 ```bash
 pw.x -i grap_scf.in > grap_scf.out
 ```
@@ -226,7 +226,7 @@ Parallel
 mpirun -np 6 pw.x -inp grap_scf.in > grap_scf.out
 ```
 
-### 2. NSCF
+### 9.2. NSCF
 ```bash
 pw.x -i grap_nscf.in > grap_nscf.out
 ```
@@ -236,7 +236,7 @@ Parallel
 mpirun -np 6 pw.x -inp grap_nscf.in > grap_nscf.out
 ```
 
-### 3. DOS
+### 9.3. DOS
 ```bash
 dos.x -i grap_dos.in > grap_dos.out
 ```
@@ -246,7 +246,7 @@ Parallel
 mpirun -np 6 dos.x -inp grap_dos.in > grap_dos.out
 ```
 
-### 4. PDOS
+### 9.4. PDOS
 ```bash
 projwfc.x < grap_projwfc.in > grap_projwfc.out
 ```
@@ -256,7 +256,7 @@ Parallel
 mpirun -np 6 projwfc.x -inp grap_projwfc.in > grap_projwfc.out
 ```
 
-### 5. Band structure
+### 9.5. Band structure
 ```bash
 pw.x -i grap_bands.in > grap_bands.out
 ```
@@ -274,7 +274,7 @@ mpirun -np 6 pw.x -inp grap_bands.in > grap_bands.out
 mpirun -np 6 bands.x -inp grap_bands_pp.in > grap_bands_pp.out
 ```
 
-### 6. Electric Potential
+### 9.6. Electric Potential
 ```bash
 pp.x < pp_SOC_rashba.in> pp_SOC_rashba.out
 ```
@@ -284,7 +284,7 @@ Parallel
 mpirun -np 6 pp.x -inp < pp_SOC_rashba.in > pp_SOC_rashba.out
 ```
 
-### 7. Data to plot the electric potential
+### 9.7. Data to plot the electric potential
 ```bash
 average.x <average.in> average.out
 ```

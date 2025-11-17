@@ -136,17 +136,30 @@ Useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
 - [x] Carbono: https://pseudopotentials.quantum-espresso.org/legacy_tables/ps-library/c
 - [x] Carbono: https://nninc.cnf.cornell.edu/psplist.php?element=c
 
-## 6. Visualize the crystal structure with [xcrysden](http://www.xcrysden.org/)
-6.1. Install xcrysden
+## 6. Visualize the crystal structure 
+### 6.1. with [xcrysden](http://www.xcrysden.org/)
+6.1.1. Install xcrysden
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install xcrysden
 ```
-6.2. Visualize
+6.1.2. Visualize
 ```bash
 xcrysden --pwi silicon_scf.in
 ```
+
+### 6.2. with [VESTA](https://jp-minerals.org/vesta/en/)
+6.2.1. Download the [qe_convert.py]([https://jp-minerals.org/vesta/en/](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/qe_convert.py) script
+6.2.2. Run
+```bash
+qe_convert.py silicon_scf.in
+```
+6.2.3. Visualize
+```bash
+vesta POSCAR
+```
+
 
 ### Using job script
 

@@ -112,41 +112,29 @@ mpirun -np 4 pw.x -inp silicon_bands.in > silicon_bands.out
 ```bash
 mpirun -np 4 bands.x -inp silicon_bands_pp.in > silicon_bands_pp.out
 ```
-
-
-
-
-- PW: https://www.quantum-espresso.org/Doc/INPUT_PW.html
-- DOS: https://www.quantum-espresso.org/Doc/INPUT_DOS.html
-- BANDS: https://www.quantum-espresso.org/Doc/INPUT_BANDS.html
-- PROJWFC: https://www.quantum-espresso.org/Doc/INPUT_PROJWFC.html
-- pp.x: https://www.quantum-espresso.org/Doc/INPUT_PP.html
-- https://pranabdas.github.io/espresso/hands-on/graphene/
-
-- Band gap: https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso
-- SOC: https://www.quantum-espresso.org/Doc/pw_user_guide/node10.html
+## 4. Input File Description: Check the tags to set up the files with the .in extension
+- [x] PW: https://www.quantum-espresso.org/Doc/INPUT_PW.html
+- [x] DOS: https://www.quantum-espresso.org/Doc/INPUT_DOS.html
+- [x] PROJWFC: https://www.quantum-espresso.org/Doc/INPUT_PROJWFC.html
+- [x] BANDS: https://www.quantum-espresso.org/Doc/INPUT_BANDS.html
+- [x] pp.x: https://www.quantum-espresso.org/Doc/INPUT_PP.html
   
-### Pseudopotentials: 
+## 5. Pseudopotentials
+Useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
 
-useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
-
-- https://pseudopotentials.quantum-espresso.org/legacy_tables
-- https://dalcorso.github.io/pslibrary/
-- https://www.pseudo-dojo.org/
-- https://pseudopotentials.quantum-espresso.org/
-- https://www.materialscloud.org/discover/sssp/table/efficiency
-- https://www.physics.rutgers.edu/gbrv/
-- https://nninc.cnf.cornell.edu
-- http://www.quantum-simulation.org/potentials/
-- BLYP pseudopotentials: https://pseudopotentials.quantum-espresso.org/legacy_tables/hartwigesen-goedecker-hutter-pp
-- SCAN pseudopotentials: https://yaoyi92.github.io/scan-tm-pseudopotentials.html
+- [x] https://pseudopotentials.quantum-espresso.org/legacy_tables
+- [x] https://dalcorso.github.io/pslibrary/
+- [x] https://www.pseudo-dojo.org/
+- [x] https://pseudopotentials.quantum-espresso.org/
+- [x] https://www.materialscloud.org/discover/sssp/table/efficiency
+- [x] https://www.physics.rutgers.edu/gbrv/
+- [x] https://nninc.cnf.cornell.edu
+- [x] http://www.quantum-simulation.org/potentials/
+- [x] BLYP pseudopotentials: https://pseudopotentials.quantum-espresso.org/legacy_tables/hartwigesen-goedecker-hutter-pp
+- [x] SCAN pseudopotentials: https://yaoyi92.github.io/scan-tm-pseudopotentials.html
   
-- Carbono: https://pseudopotentials.quantum-espresso.org/legacy_tables/ps-library/c
-- Carbono: https://nninc.cnf.cornell.edu/psplist.php?element=c
-
-
-graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene
-
+- [x] Carbono: https://pseudopotentials.quantum-espresso.org/legacy_tables/ps-library/c
+- [x] Carbono: https://nninc.cnf.cornell.edu/psplist.php?element=c
 
 ### Using job script
 
@@ -165,7 +153,12 @@ xcrysden --pwi graphene_scf.in
 ###    Find the gap
 
 - https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso
+- https://pranabdas.github.io/espresso/hands-on/graphene/
+- Band gap: https://mattermodeling.stackexchange.com/questions/12440/how-to-find-the-band-gap-energy-value-in-quantum-espresso
+- SOC: https://www.quantum-espresso.org/Doc/pw_user_guide/node10.html
+- graphene: https://github.com/pranabdas/espresso/tree/main/src/graphene
 
+  
 ## Modifying the resolution 
 ### 1. in /home/joseph/qe-7.4.1/PP/src/dos.f90
 Change the resolution in section:

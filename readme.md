@@ -93,7 +93,7 @@ grep -e 'total energy' -e estimate silicon_scf.out
 ```bash
 mpirun -np 4 pw.x -inp silicon_nscf.in > silicon_nscf.out
 ```
-3.5. Check the VBM and CBM values. Computed the band gap as **gap = CBM - VBM**
+3.5. Check the VBM and CBM values. Calculate the band gap as **gap = CBM - VBM**
 ```bash
 grep 'highest occupied' silicon_nscf.out
 ```

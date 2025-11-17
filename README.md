@@ -5,6 +5,7 @@
 ### 1.1. Using the source package from the official website: https://www.quantum-espresso.org/
 Installation tutorial: https://www.youtube.com/watch?v=-5fcsJILc6U
 
+### 1.2. Using the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file (compiled version)
 1. Requirements:
    ```bash
    sudo apt update
@@ -27,6 +28,7 @@ Installation tutorial: https://www.youtube.com/watch?v=-5fcsJILc6U
    source ~/.bashrc
    ```
 5. Now you can use the software.
+
    
 ## Install from the scratch
 

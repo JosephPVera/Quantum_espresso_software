@@ -33,15 +33,19 @@
    ```bash
    cp -r Quantum_espresso_software/qe-7.4.1 .
    ```
-5. Set up the **.bashrc** file in your laptop or pc similar to [bashrc](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/bashrc), write 
+5. Set up the **.bashrc** file on your laptop or pc similar to [bashrc](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/bashrc) file 
    ```bash
    # Quantum Espresso
    PATH="/home/joseph/qe-7.4.1/bin:$PATH"
    ```  
-4. Run
+6. Run
    ```bash
    source ~/.bashrc
    ```
+
+
+
+   
 5. Now you can use the software.
 
    

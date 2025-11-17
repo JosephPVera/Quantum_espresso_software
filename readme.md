@@ -184,7 +184,7 @@ Change the resolution in section:
 WRITE (4,'(f15.8,3e20.10)') E * rytoev, DOSofE(1)/rytoev, DOSint(1)
 ```
 
-update the dos.90 in **/home/joseph/qe-7.4.1** using
+update the **dos.90** file in **/home/joseph/qe-7.4.1** using
 ```bash
 make pwall -j2
 ```
@@ -201,7 +201,7 @@ and
 WRITE (iunpun0,'(2f10.4)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
 
-update the bands.90 in **/home/joseph/qe-7.4.1** using
+update the **bands.90** file in **/home/joseph/qe-7.4.1** using
 ```bash
 make pwall -j2
 ```
@@ -212,7 +212,7 @@ Change the resolution in section:
 9040 FORMAT(/'     the Fermi energy is ',F10.4,' ev' )
 ```
 
-update the print_ks_energies.f90 in **/home/joseph/qe-7.4.1** using
+update the **print_ks_energies.f90** file in **/home/joseph/qe-7.4.1** using
 ```bash
 make pw -j2
 ```

@@ -3,7 +3,7 @@
 # 2025-09
 
 # Convert Quantum ESPRESSO .in file to VASP POSCAR
-# Usage: python qeconvert.py input.in
+# Usage: python3 qe_convert.py input.in
 
 import numpy as np
 import sys
@@ -164,7 +164,7 @@ def write_poscar(filename, lattice, coords):
 # -------- Main --------
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python qeconvert.py input.in")
+        print("Usage: python3 qe_convert.py input.in")
         sys.exit(1)
 
     data = parse_qe_input(sys.argv[1])

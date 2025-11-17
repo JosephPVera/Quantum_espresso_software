@@ -223,7 +223,7 @@ projwfc.x < grap_projwfc.in > grap_projwfc.out
 
 Parallel
 ```bash
-mpirun -np 6 projwfc.x -inp < grap_projwfc.in > grap_projwfc.out
+mpirun -np 6 projwfc.x -inp grap_projwfc.in > grap_projwfc.out
 ```
 
 ### 5. Band structure

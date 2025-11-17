@@ -3,8 +3,7 @@
 ## 1. How install it?
 
 ### 1.1. Using the source package from the official website: https://www.quantum-espresso.org/
-    - Installation tutorial
-      https://www.youtube.com/watch?v=-5fcsJILc6U
+Installation tutorial: https://www.youtube.com/watch?v=-5fcsJILc6U
 
 1. Requirements:
    ```bash

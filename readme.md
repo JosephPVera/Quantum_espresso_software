@@ -1,7 +1,7 @@
 # Quantum Espresso Software
 
 ## 0. Quantum ESPRESSO workflow
-![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/workflow/qe-wrokflow.png)
+![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/workflow/qe-workflow.png)
 
 ## 1. How install it?
 

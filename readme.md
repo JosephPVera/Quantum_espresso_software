@@ -11,7 +11,7 @@
   - https://www.youtube.com/watch?v=gVHrjbDCxaM&list=PL6fYKYtuMec_2-_18mxoHswOoCMz3KTe4&index=6
 
 ### 1.2. Using the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file (compiled version)
-1. Requirements:
+1. Install the requirements:
    ```bash
    sudo apt update
    sudo apt install build-essential gfortran gcc g++ \
@@ -19,7 +19,8 @@
    libblas-dev liblapack-dev libfftw3-dev \
    git wget make
    ```
-2. Download the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file using
+3. Open the terminal 
+2. Download the [Quantum_espresso_software](https://github.com/JosephPVera/Quantum_espresso_software) repository:
    ```bash
    git clone https://github.com/JosephPVera/Quantum_espresso_software.git
    ```

@@ -24,11 +24,11 @@
    ```bash
    git clone https://github.com/JosephPVera/Quantum_espresso_software.git
    ```
-4. Copy the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file in /home/joseph
+4. Copy the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file to **/home/joseph**
    ```bash
    cp -r Quantum_espresso_software/qe-7.4.1 .
    ```
-3. Set up the .bashrc file similar to [bashrc](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/bashrc), write 
+5. Set up the **.bashrc** file in your laptop or pc similar to [bashrc](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/bashrc), write 
    ```bash
    # Quantum Espresso
    PATH="/home/joseph/qe-7.4.1/bin:$PATH"

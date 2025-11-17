@@ -3,7 +3,12 @@
 ## 1. How install it?
 
 ### 1.1. Using the source package from the official website: https://www.quantum-espresso.org/
-Installation tutorial: https://www.youtube.com/watch?v=-5fcsJILc6U
+- Installation tutorial: https://www.youtube.com/watch?v=-5fcsJILc6U
+- Some tutorials:
+  --> https://github.com/rpadhikari/Himachal_NMM_22
+- https://pranabdas.github.io/espresso/category/hands-on/
+- https://jyhuang.idv.tw/JYH_QESimulation.html
+- https://www.youtube.com/watch?v=gVHrjbDCxaM&list=PL6fYKYtuMec_2-_18mxoHswOoCMz3KTe4&index=6
 
 ### 1.2. Using the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file (compiled version)
 1. Requirements:

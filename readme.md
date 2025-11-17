@@ -13,7 +13,7 @@
   - https://jyhuang.idv.tw/JYH_QESimulation.html
   - https://www.youtube.com/watch?v=gVHrjbDCxaM&list=PL6fYKYtuMec_2-_18mxoHswOoCMz3KTe4&index=6
 
-### 1.2. Using the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file (compiled version)
+### 1.2. Using the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) folder (compiled version)
 1. Install the requirements
    ```bash
    sudo apt update

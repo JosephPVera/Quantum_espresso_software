@@ -19,7 +19,12 @@
    libblas-dev liblapack-dev libfftw3-dev \
    git wget make
    ```
-2. Open the terminal 
+2. Open the terminal and install Git
+   ```bash
+   sudo apt update
+   sudo apt install git
+   git --version
+   ```   
 3. Download the [Quantum_espresso_software](https://github.com/JosephPVera/Quantum_espresso_software) repository
    ```bash
    git clone https://github.com/JosephPVera/Quantum_espresso_software.git

@@ -32,7 +32,7 @@
    ```bash
    git clone https://github.com/JosephPVera/Quantum_espresso_software.git
    ```
-4. Copy the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file to **/home/joseph/**
+4. Copy the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) folder to **/home/joseph/**
    ```bash
    cp -r Quantum_espresso_software/qe-7.4.1 .
    ```

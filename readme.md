@@ -180,6 +180,10 @@ cp -r VESTA-gtk3 ../VESTA
 ```bash
 alias vesta="/home/joseph/VESTA/VESTA"
 ```
+6.2.5. Run
+```bash
+source ~/.bashrc
+```
 
 6.2.5. Download the [qe_convert.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/qe_convert.py) script
 

@@ -79,6 +79,7 @@ lscpu
 3.1. Copy the files with the .in extension into the **silicon** file
 ```bash
 cp /home/joseph/Quantum_espresso_software/Examples/silicon/silicon_*.in /home/joseph/Documents/qe/silicon/
+cd /home/joseph/Documents/qe/silicon/
 ```
 3.2. Run the SCF calculation 
 ```bash
@@ -86,13 +87,13 @@ mpirun -np 4 pw.x -inp silicon_scf.in > silicon_scf.out
 ```
 3.3. Check the total energy of the system
 ```bash
-grep -e 'total energy' -e estimate pw.scf.silicon.out
+grep -e 'total energy' -e estimate silicon_scf.out
 ```
 3.4. Run the NSCF calculation
 ```bash
 mpirun -np 4 pw.x -inp silicon_nscf.in > silicon_nscf.out
 ```
-3.5. Check the VBM and CBM values
+3.5. Check the VBM and CBM values. Computed the band gap as **gap = CBM - VBM**
 ```bash
 grep 'highest occupied' silicon_nscf.out
 ```

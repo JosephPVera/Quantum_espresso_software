@@ -19,10 +19,14 @@
    libblas-dev liblapack-dev libfftw3-dev \
    git wget make
    ```
-3. Open the terminal 
-2. Download the [Quantum_espresso_software](https://github.com/JosephPVera/Quantum_espresso_software) repository
+2. Open the terminal 
+3. Download the [Quantum_espresso_software](https://github.com/JosephPVera/Quantum_espresso_software) repository
    ```bash
    git clone https://github.com/JosephPVera/Quantum_espresso_software.git
+   ```
+4. Copy the [qe-7.4.1](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/qe-7.4.1) file in /home/joseph
+   ```bash
+   cp -r Quantum_espresso_software/qe .
    ```
 3. Set up the .bashrc file similar to [bashrc](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/bashrc), write 
    ```bash

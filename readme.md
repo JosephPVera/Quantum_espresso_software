@@ -55,24 +55,22 @@
 
 **Information:** This compiled version of Quantum ESPRESSO does not have parallel calculation enabled.
 
---- 
-Enabling parallel execution
----
+## 2. Enabling parallel execution
 Check: https://www.youtube.com/watch?v=2PAJGrNhZB8
 
-1. Activate parallelization
+2.1. Activate parallelization
 ```bash
 ./configure
 ```
-2. Run
+2.2. Run
 ```bash
 make pw
 ```
-3. Run
+2.3. Run
 ```bash
 make pwall
 ```
-4. Check the number of cores on your laptop or pc
+2.4. Check the number of cores on your laptop or pc
 ```bash
 lscpu
 ```

@@ -81,7 +81,7 @@ lscpu
 ## 3. Replicating the example in the [silicon](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/Examples/silicon) file
 3.0. **Warning:** Keep in mind that this case is just an example; for reliable and accurate calculations, it is essential to begin with convergence tests and relax the system.
 
-3.1. Copy the files with the .in extension into the **silicon** file
+3.1. Copy the files with the .in extension into the **silicon** folder
 ```bash
 cp /home/joseph/Quantum_espresso_software/Examples/silicon/silicon_*.in /home/joseph/Documents/qe/silicon/
 cd /home/joseph/Documents/qe/silicon/

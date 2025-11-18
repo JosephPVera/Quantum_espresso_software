@@ -333,12 +333,12 @@ mpirun -np 6 bands.x -inp grap_bands_pp.in > grap_bands_pp.out
 
 ### 9.6. Electric Potential
 ```bash
-pp.x < pp_SOC_rashba.in> pp_SOC_rashba.out
+pp.x < pp_SOC_potential.in> pp_SOC_potential.out
 ```
 
 Parallel
 ```bash
-mpirun -np 6 pp.x -inp < pp_SOC_rashba.in > pp_SOC_rashba.out
+mpirun -np 6 pp.x -inp < pp_SOC_potential.in > pp_SOC_potential.out
 ```
 
 ### 9.7. Data to plot the electric potential

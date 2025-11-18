@@ -345,8 +345,3 @@ mpirun -np 6 pp.x -inp < pp_SOC_rashba.in > pp_SOC_rashba.out
 ```bash
 average.x <average.in> average.out
 ```
-
-Parallel
-```bash
-mpirun -np 6 average.x -inp <average.in> average.out
-```

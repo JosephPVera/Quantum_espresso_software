@@ -279,7 +279,7 @@ update the **print_ks_energies.f90** file from **/home/joseph/qe-7.4.1** using
 make pw -j2
 ```
 
-$${\color{red}Example}$$: For graphene calculations with 6 decimals
+$${\color{red}\text{Example}}$$: For graphene calculations with 6 decimals
 ```bash
 9042 FORMAT(/'     highest occupied, lowest unoccupied level (ev): ',2F10.6 )
 9040 FORMAT(/'     the Fermi energy is ',F10.6,' ev' )

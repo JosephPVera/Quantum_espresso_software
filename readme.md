@@ -239,7 +239,7 @@ Change the resolution on line 233:
 WRITE (4, '(f8.3,2e12.4)') E * rytoev, DOSofE(1)/rytoev, DOSint(1)
 ```
 
-update the **dos.90** file in **/home/joseph/qe-7.4.1** using
+update the **dos.90** file from **/home/joseph/qe-7.4.1** using
 ```bash
 make pwall -j2
 ```
@@ -256,7 +256,7 @@ and on line 635:
 WRITE (iunpun0,'(2f10.4)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
 
-update the **bands.90** file in **/home/joseph/qe-7.4.1** using
+update the **bands.90** file from **/home/joseph/qe-7.4.1** using
 ```bash
 make pwall -j2
 ```
@@ -274,7 +274,7 @@ Change the resolution on lines 208, 210, 213:
 9050 FORMAT( '     (compare with: ', F10.4,' eV, computed in scf)' )
 ```
 
-update the **print_ks_energies.f90** file in **/home/joseph/qe-7.4.1** using
+update the **print_ks_energies.f90** file from **/home/joseph/qe-7.4.1** using
 ```bash
 make pw -j2
 ```

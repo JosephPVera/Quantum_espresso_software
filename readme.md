@@ -261,7 +261,7 @@ update the **bands.90** file from **/home/joseph/qe-7.4.1** using
 make pwall -j2
 ```
 
-$${\color{red}Example$$: For graphene calculations with 6 decimals, modify line 635
+Example: For graphene calculations with 6 decimals, modify line 635
 ```bash
 WRITE (iunpun0,'(2f14.6)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```

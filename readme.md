@@ -267,11 +267,11 @@ WRITE (iunpun0,'(2f14.6)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
 
 ### 8.3. Fermy energy: /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
-Change the resolution on lines 208, 210, 212:
+Change the resolution on lines 208, 210, 213:
 ```bash
 9042 FORMAT(/'     highest occupied, lowest unoccupied level (ev): ',2F10.4 )
 9040 FORMAT(/'     the Fermi energy is ',F10.4,' ev' )
-9051 FORMAT( '     (compare with: ',2F10.4,' eV, computed in scf)' )
+9050 FORMAT( '     (compare with: ', F10.4,' eV, computed in scf)' )
 ```
 
 update the **print_ks_energies.f90** file in **/home/joseph/qe-7.4.1** using
@@ -283,7 +283,7 @@ Example: For graphene
 ```bash
 9042 FORMAT(/'     highest occupied, lowest unoccupied level (ev): ',2F10.6 )
 9040 FORMAT(/'     the Fermi energy is ',F10.6,' ev' )
-9051 FORMAT( '     (compare with: ',2F10.6,' eV, computed in scf)' )
+9050 FORMAT( '     (compare with: ', F10.6,' eV, computed in scf)' )
 ```
 
 ## 9. Commands to run the simulations

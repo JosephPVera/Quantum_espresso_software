@@ -234,9 +234,9 @@ vesta POSCAR
   
 ## 8. Modifying the resolution 
 ### 8.1. DOS: /home/joseph/qe-7.4.1/PP/src/dos.f90
-Change the resolution in section:
+Change the resolution on line 233:
 ```bash
-WRITE (4,'(f15.8,3e20.10)') E * rytoev, DOSofE(1)/rytoev, DOSint(1)
+WRITE (4, '(f8.3,2e12.4)') E * rytoev, DOSofE(1)/rytoev, DOSint(1)
 ```
 
 update the **dos.90** file in **/home/joseph/qe-7.4.1** using
@@ -245,13 +245,13 @@ make pwall -j2
 ```
 
 ### 8.2. BANDS: /home/joseph/qe-7.4.1/PP/src/bands.f90
-Change the resolution in section:
+Change the resolution on line 623:
 ```bash
 WRITE( stdout,'(5x,"high-symmetry point: ",3f7.4,&
                  &"   x coordinate",f9.4)') (xk(i,n),i=1,3), kx(n)
 ```
 
-and 
+and on line 635:
 ```bash
 WRITE (iunpun0,'(2f10.4)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
@@ -261,15 +261,29 @@ update the **bands.90** file in **/home/joseph/qe-7.4.1** using
 make pwall -j2
 ```
 
-### 8.3. Fermy energy: /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
-Change the resolution in section:
+Example: For graphene, modify line 635
 ```bash
+WRITE (iunpun0,'(2f14.6)') (kx(n), et(i,n),n=nks1tot,nks2tot)
+```
+
+### 8.3. Fermy energy: /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
+Change the resolution on lines 208, 210, 212:
+```bash
+9042 FORMAT(/'     highest occupied, lowest unoccupied level (ev): ',2F10.4 )
 9040 FORMAT(/'     the Fermi energy is ',F10.4,' ev' )
+9051 FORMAT( '     (compare with: ',2F10.4,' eV, computed in scf)' )
 ```
 
 update the **print_ks_energies.f90** file in **/home/joseph/qe-7.4.1** using
 ```bash
 make pw -j2
+```
+
+Example: For graphene
+```bash
+9042 FORMAT(/'     highest occupied, lowest unoccupied level (ev): ',2F10.6 )
+9040 FORMAT(/'     the Fermi energy is ',F10.6,' ev' )
+9051 FORMAT( '     (compare with: ',2F10.6,' eV, computed in scf)' )
 ```
 
 ## 9. Commands to run the simulations

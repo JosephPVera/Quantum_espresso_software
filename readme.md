@@ -261,7 +261,7 @@ update the **bands.90** file from **/home/joseph/qe-7.4.1** using
 make pwall -j2
 ```
 
-Example: For graphene calculations with 6 decimals, modify line 635
+$${\color{red}Example}$$: For graphene calculations with 6 decimals, modify line 635
 ```bash
 WRITE (iunpun0,'(2f14.6)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
@@ -279,7 +279,7 @@ update the **print_ks_energies.f90** file from **/home/joseph/qe-7.4.1** using
 make pw -j2
 ```
 
-$${\color{red}Red}$$: For graphene calculations with 6 decimals
+$${\color{red}Example}$$: For graphene calculations with 6 decimals
 ```bash
 9042 FORMAT(/'     highest occupied, lowest unoccupied level (ev): ',2F10.6 )
 9040 FORMAT(/'     the Fermi energy is ',F10.6,' ev' )

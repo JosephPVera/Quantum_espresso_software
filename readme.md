@@ -266,6 +266,8 @@ $${\color{red}\text{Example}}$$: For graphene calculations with 6 decimals (${10
 WRITE (iunpun0,'(2f14.6)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
 
+**Recommendation**: Set it to 8 decimals (${10}^{-8}$ eV).
+
 ### 8.3. Fermy energy: /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
 Change the resolution on lines 208, 210, 213:
 ```bash
@@ -285,6 +287,8 @@ $${\color{red}\text{Example}}$$: For graphene calculations with 6 decimals (${10
 9040 FORMAT(/'     the Fermi energy is ',F10.6,' ev' )
 9050 FORMAT( '     (compare with: ', F10.6,' eV, computed in scf)' )
 ```
+
+**Recommendation**: Set it to 8 decimals (${10}^{-8}$ eV).
 
 ## 9. Commands to run the simulations
 ### 9.1. SCF

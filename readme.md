@@ -56,7 +56,7 @@
    ```
 9. Now you can use the software.
 
-**Information:** This compiled version of Quantum ESPRESSO does not have parallel calculation enabled.
+💡 **Information:** This compiled version of Quantum ESPRESSO does not have parallel calculation enabled.
 
 ## 2. Enabling parallel execution
 Check: https://www.youtube.com/watch?v=2PAJGrNhZB8
@@ -79,7 +79,7 @@ lscpu
 ```
 
 ## 3. Replicating the example in the [silicon](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/Examples/silicon) file
-3.0. **Warning:** Keep in mind that this case is just an example; for reliable and accurate calculations, it is essential to begin with convergence tests and relax the system.
+3.0. ⚠️ **Warning:** Keep in mind that this case is just an example; for reliable and accurate calculations, it is essential to begin with convergence tests and relax the system.
 
 3.1. Copy the files with the .in extension into the **silicon** folder
 ```bash
@@ -173,7 +173,7 @@ sudo apt-get install xcrysden
 xcrysden --pwi silicon_scf.in
 ```
 
-**WARNING:** If xcrysden crashes with error, use these steps to fix it
+⚠️ **WARNING:** If xcrysden crashes with error, use these steps to fix it
 
 6.1.3. Copy **custom-definitions** file
 ```bash
@@ -261,12 +261,12 @@ update the **bands.90** file from **/home/joseph/qe-7.4.1** using
 make pwall -j2
 ```
 
-$${\color{red}\text{Example}}$$: For graphene calculations with 6 decimals (${10}^{-6}$ eV = µeV), modify line 635
+ℹ️ $${\color{red}\text{Example}}$$: For graphene calculations with 6 decimals (${10}^{-6}$ eV = µeV), modify line 635
 ```bash
 WRITE (iunpun0,'(2f14.6)') (kx(n), et(i,n),n=nks1tot,nks2tot)
 ```
 
-**Recommendation**: Set it to 8 decimals (${10}^{-8}$ eV).
+💡 **Recommendation**: Set it to 8 decimals (${10}^{-8}$ eV).
 
 ### 8.3. Fermy energy: /home/joseph/qe-7.4.1/PW/src/print_ks_energies.f90
 Change the resolution on lines 208, 210, 213:
@@ -281,14 +281,14 @@ update the **print_ks_energies.f90** file from **/home/joseph/qe-7.4.1** using
 make pw -j2
 ```
 
-$${\color{red}\text{Example}}$$: For graphene calculations with 6 decimals (${10}^{-6}$ eV = µeV)
+ℹ️ $${\color{red}\text{Example}}$$: For graphene calculations with 6 decimals (${10}^{-6}$ eV = µeV)
 ```bash
 9042 FORMAT(/'     highest occupied, lowest unoccupied level (ev): ',2F10.6 )
 9040 FORMAT(/'     the Fermi energy is ',F10.6,' ev' )
 9050 FORMAT( '     (compare with: ', F10.6,' eV, computed in scf)' )
 ```
 
-**Recommendation**: Set it to 8 decimals (${10}^{-8}$ eV).
+💡 **Recommendation**: Set it to 8 decimals (${10}^{-8}$ eV).
 
 ## 9. Commands to run the simulations
 ### 9.1. SCF

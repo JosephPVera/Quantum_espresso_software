@@ -81,24 +81,24 @@ lscpu
 ## 3. Replicating the example in the [silicon](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/Examples/silicon) file
 3.0. ⚠️ **Warning:** Keep in mind that this case is just an example; for reliable and accurate calculations, it is essential to begin with convergence tests and relax the system.
 
-3.1. Copy the files with the .in extension into the **silicon** folder
+3.1. Copy the input files (.in extension) into the **silicon** folder
 ```bash
 cp /home/joseph/Quantum_espresso_software/Examples/silicon/silicon_*.in /home/joseph/Documents/qe/silicon/
 cd /home/joseph/Documents/qe/silicon/
 ```
-3.2. Run the SCF calculation 
+3.2. Run the **scf** calculation 
 ```bash
 mpirun -np 4 pw.x -inp silicon_scf.in > silicon_scf.out
 ```
-3.3. Check the total energy of the system
+Check the total energy of the system
 ```bash
 grep -e 'total energy' -e estimate silicon_scf.out
 ```
-3.4. Run the NSCF calculation
+3.3. Run the **nscf** calculation
 ```bash
 mpirun -np 4 pw.x -inp silicon_nscf.in > silicon_nscf.out
 ```
-3.5. Check the VBM and CBM values
+Check the VBM and CBM values
 ```bash
 grep 'highest occupied' silicon_nscf.out
 ```
@@ -111,29 +111,29 @@ Calculate the band gap as **gap = CBM - VBM**
 Gap = 6.7835 - 6.2107 = 0.5728 eV
 ```
 
-3.6. Run the DOS calculation
+3.4. Run the **dos** calculation
 ```bash
 mpirun -np 4 dos.x -inp silicon_dos.in > silicon_dos.out
 ```
-3.7. Plot the DOS using the [dos.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/dos.py) script
+Plot the DOS using the [dos.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/dos.py) script
 ![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/dos/silicon_dos.png)
 
-3.8. Run the PDOS calculation 
+3.7. Run the **pdos** calculation 
 ```bash
 mpirun -np 4 projwfc.x -inp silicon_projwfc.in > silicon_projwfc.out
 ```
-3.9. Plot the PDOS using the [pdos.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/pdos.py) script
+Plot the PDOS for each atom using the [pdos.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/pdos.py) script
 ![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/pdos/silicon_pdos-atom_1.png)
 
-3.10. Run the BAND calculation
+3.8. Run the **band** calculation
 ```bash
 mpirun -np 4 pw.x -inp silicon_bands.in > silicon_bands.out
 ```
+3.9. Run the **band_pp** to gather the k-points and energies
 ```bash
 mpirun -np 4 bands.x -inp silicon_bands_pp.in > silicon_bands_pp.out
 ```
-
-3.11. Plot the band structure using the [bandplot.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/bandplot.py) script
+Plot the band structure using the [bandplot.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/bandplot.py) script
 ![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/band_pp/silicon_bands.png)
 
 ## 4. Input File Description: Check the tags to set up the files with the .in extension

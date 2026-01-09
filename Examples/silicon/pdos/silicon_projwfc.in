@@ -1,6 +1,6 @@
 &PROJWFC
   prefix = 'silicon',
-  outdir = './tmp/',
+  outdir = '../tmp/',
   filpdos= 'silicon_pdos.dat',
   DeltaE = 0.02,
   Emax = 15,

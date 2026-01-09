@@ -81,7 +81,7 @@ lscpu
 ## 3. Replicating the example in the [silicon](https://github.com/JosephPVera/Quantum_espresso_software/tree/main/Examples/silicon) file
 3.0. ⚠️ **Warning:** Keep in mind that this case is just an example; for reliable and accurate calculations, it is essential to begin with convergence tests and relax the system.
 
-3.1. Copy the input files (.in extension) into the **silicon** folder
+3.1. Copy the input files with the .in extension into the **silicon** folder
 ```bash
 cp /home/joseph/Quantum_espresso_software/Examples/silicon/silicon_*.in /home/joseph/Documents/qe/silicon/
 cd /home/joseph/Documents/qe/silicon/
@@ -129,14 +129,14 @@ Plot the PDOS for each atom using the [pdos.py](https://github.com/JosephPVera/Q
 ```bash
 mpirun -np 4 pw.x -inp silicon_bands.in > silicon_bands.out
 ```
-3.9. Run the **band_pp** to gather the k-points and energies
+3.9. Run the **band_pp** calculation to gather the k-points and energies
 ```bash
 mpirun -np 4 bands.x -inp silicon_bands_pp.in > silicon_bands_pp.out
 ```
 Plot the band structure using the [bandplot.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/bandplot.py) script
 ![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/band_pp/silicon_bands.png)
 
-## 4. Input File Description: Check the tags to set up the files with the .in extension
+## 4. Input File Description: Check the tags to set up the input files with the .in extension
 - [x] PW: https://www.quantum-espresso.org/Doc/INPUT_PW.html
 - [x] DOS: https://www.quantum-espresso.org/Doc/INPUT_DOS.html
 - [x] PROJWFC: https://www.quantum-espresso.org/Doc/INPUT_PROJWFC.html

@@ -116,14 +116,14 @@ Gap = 6.7835 - 6.2107 = 0.5728 eV
 mpirun -np 4 dos.x -inp silicon_dos.in > silicon_dos.out
 ```
 3.7. Plot the DOS using the [dos.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/dos.py) script
-![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/silicon_dos.png)
+![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/dos/silicon_dos.png)
 
 3.8. Run the PDOS calculation 
 ```bash
 mpirun -np 4 projwfc.x -inp silicon_projwfc.in > silicon_projwfc.out
 ```
 3.9. Plot the PDOS using the [pdos.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/pdos.py) script
-![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/silicon_pdos-atom_1.png)
+![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/pdos/silicon_pdos-atom_1.png)
 
 3.10. Run the BAND calculation
 ```bash
@@ -134,7 +134,7 @@ mpirun -np 4 bands.x -inp silicon_bands_pp.in > silicon_bands_pp.out
 ```
 
 3.11. Plot the band structure using the [bandplot.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/bandplot.py) script
-![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/silicon_bands.png)
+![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/band_pp/silicon_bands.png)
 
 ## 4. Input File Description: Check the tags to set up the files with the .in extension
 - [x] PW: https://www.quantum-espresso.org/Doc/INPUT_PW.html

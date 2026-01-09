@@ -6,7 +6,7 @@
   prefix = 'silicon',
 
 ! output directory. Note that it is deprecated.
-  outdir = './tmp/'
+  outdir = '../tmp/'
 
 ! directory for the pseudo potential directory
   pseudo_dir = '../pseudos/'

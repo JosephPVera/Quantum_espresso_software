@@ -160,6 +160,8 @@ Useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
 - [x] Carbono: https://pseudopotentials.quantum-espresso.org/legacy_tables/ps-library/c
 - [x] Carbono: https://nninc.cnf.cornell.edu/psplist.php?element=c
 
+- [x] SG15 ONCV: http://www.quantum-simulation.org/potentials/sg15_oncv/
+
 ## 6. Visualize the crystal structure 
 ### 6.1. [xcrysden](http://www.xcrysden.org/)
 6.1.1. Install xcrysden

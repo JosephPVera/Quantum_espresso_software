@@ -142,6 +142,8 @@ Plot the band structure using the [bandplot.py](https://github.com/JosephPVera/Q
 - [x] PROJWFC: https://www.quantum-espresso.org/Doc/INPUT_PROJWFC.html
 - [x] BANDS: https://www.quantum-espresso.org/Doc/INPUT_BANDS.html
 - [x] pp.x: https://www.quantum-espresso.org/Doc/INPUT_PP.html
+- [x] wannier90: https://www.quantum-espresso.org/Doc/INPUT_pw2wannier90.html
+- [x] kcw ---> calculates spectral properties using the koopmans-compliant framework and Maximally Localized Wannier Functions: https://www.quantum-espresso.org/Doc/INPUT_kcw.html   
   
 ## 5. Pseudopotentials
 Useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/

@@ -144,7 +144,23 @@ Plot the band structure using the [bandplot.py](https://github.com/JosephPVera/Q
 - [x] pp.x: https://www.quantum-espresso.org/Doc/INPUT_PP.html
 - [x] wannier90: https://www.quantum-espresso.org/Doc/INPUT_pw2wannier90.html
 - [x] kcw ---> calculates spectral properties using the koopmans-compliant framework and Maximally Localized Wannier Functions: https://www.quantum-espresso.org/Doc/INPUT_kcw.html   
-  
+- [x] PH (Phonon): https://www.quantum-espresso.org/Doc/INPUT_PH.html
+- [x] postahc: https://www.quantum-espresso.org/Doc/INPUT_POSTAHC.html
+- [x] HP (Hubbard model): https://www.quantum-espresso.org/Doc/INPUT_HP.html
+- [x] CP (Car–Parrinello Molecular Dynamics): https://www.quantum-espresso.org/Doc/INPUT_CP.html
+- [x] cppp: https://www.quantum-espresso.org/Doc/INPUT_CPPP.html 
+- [x] q2r (Dynamical matrix): https://www.quantum-espresso.org/Doc/INPUT_Q2R.html
+- [x] matdyn (phonon bands): https://www.quantum-espresso.org/Doc/INPUT_MATDYN.html
+- [x] turbo_lanczos (TD-DFT): https://www.quantum-espresso.org/Doc/INPUT_Lanczos.html
+- [x] turbo_davidson (TD-DFT): https://www.quantum-espresso.org/Doc/INPUT_Davidson.html
+- [x] turbo_eels (TD-DFT): https://www.quantum-espresso.org/Doc/INPUT_EELS.html
+- [x] turbo_spectrum (TD-DFT): https://www.quantum-espresso.org/Doc/INPUT_Spectrum.html
+- [x] NEB: https://www.quantum-espresso.org/Doc/INPUT_NEB.html
+- [x] pw2bgw (GW): https://www.quantum-espresso.org/Doc/INPUT_pw2bgw.html
+- [x] pwcond: https://www.quantum-espresso.org/Doc/INPUT_PWCOND.html
+- [x] oscdft_et ---> calculates the electronic coupling of an electron transfer process: https://www.quantum-espresso.org/Doc/INPUT_OSCDFT_ET.html
+- [x]  ld1 ---> used for generating and testing atomic pseudopotentials (PP). It runs via input files defining atomic charge, configuration, and exchange-correlation functionals to compute all-electron and pseudo-wavefunctions. It is essential for creating norm-conserving, ultrasoft, or PAW potentials by analyzing logarithmic derivatives: https://www.quantum-espresso.org/Doc/INPUT_LD1.html
+
 ## 5. Pseudopotentials
 Useful information: https://pranabdas.github.io/espresso/setup/pseudo-potential/
 

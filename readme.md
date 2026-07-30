@@ -136,6 +136,8 @@ mpirun -np 4 bands.x -inp silicon_bands_pp.in > silicon_bands_pp.out
 Plot the band structure using the [bandplot.py](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/bin/bandplot.py) script
 ![Alt text](https://github.com/JosephPVera/Quantum_espresso_software/blob/main/Examples/silicon/band_pp/silicon_bands.png)
 
+An extensive example of diamond calculations using the PBE and hybrid (HSE06) functionals can be found in the [Guide to Quantum ESPRESSO calculations](https://github.com/JosephPVera/Guide-for-DFT-calculations/tree/main/Quantum-ESPRESSO).
+
 ## 4. Input File Description: Check the tags to set up the input files with the .in extension
 - [x] PW: https://www.quantum-espresso.org/Doc/INPUT_PW.html
 - [x] DOS: https://www.quantum-espresso.org/Doc/INPUT_DOS.html
